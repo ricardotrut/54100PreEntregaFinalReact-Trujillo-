@@ -1,4 +1,8 @@
+# DEMO
+![Demo](https://github.com/ricardotrut/54100PreEntregaFinalReact-Trujillo-/blob/main/demo.gif?raw=true)
+
 # React + Vite
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
