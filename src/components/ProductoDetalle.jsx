@@ -22,10 +22,7 @@ function ProductoDetalle() {
   };
 
   const addProduct = () => {
-    for (let i = 0; i < num; i++) {
-      console.log({ i, num });
-      addToCart(prod);
-    }
+    addToCart({...prod, quantity: num});
     setNum(1);
   };
 
