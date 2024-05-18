@@ -1,15 +1,17 @@
-import React, { Component } from 'react'
-import Productos from './Productos'
-import productos from '../productos'
+import React, { Component, useEffect } from "react";
+import Productos from "./Productos";
+import { useState } from "react";
+import { getitems } from "../services/items";
+import useProduct from "../hooks/useProduct";
 
-export class Home extends Component {
-  render() {
-    return (
-      <div>
-        <Productos items={productos}/>
-      </div>
-    )
-  }
-}
+const Home = () => {
+  const productos = useProduct();
 
-export default Home
+  return (
+    <div>
+      <Productos items={productos} />
+    </div>
+  );
+};
+
+export default Home;
